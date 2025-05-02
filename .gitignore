@@ -1,0 +1,74 @@
+zz-*
+
+
+
+# SYSTEM FILES
+# ref: https://www.toptal.com/developers/gitignore/api/macos
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# Mac system files
+# ref: https://www.toptal.com/developers/gitignore/api/macos
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+
+
+# GIT SMART 
+
+# ignore previously tracked content
+#
+# N0TE: this method momentarily deletes newly ignored content from server
+#
+# 1. update .gitignore and note content that's newly ignored
+#
+# $ git rm -r --cached .
+# $ git add .
+# $ git commit
+# $ git push
+#
+# 2. after push use S/FTP to post newly ignored content back to server
+
+
+
+# ignore previously tracked content WITHOUT changing on remote 
+# 
+# For a file
+# $ git update-index --assume-unchanged [file]
+# 
+# For a directory like wp-content/plugins/ or wp-content/uploads/
+# ref: https://stackoverflow.com/a/12288918
+# 
+# $ cd [DIR]
+# $ git ls-files | tr '\n' ' ' | xargs git update-index --assume-unchanged
+# 
+# ... and also update .gitignore so that NEW files in the ignored directories will be untracked
+
+
+
+
+# output tracked files on master
+#
+# $ git ls-tree -r master --name-only
+# $ git ls-tree -r main --name-only
+
+
+
+# .GITIGNORE RULES
+
+# src: https://stackoverflow.com/questions/17888695/difference-between-gitignore-rules-with-and-without-trailing-slash-like-dir-an
+
+# /dir will match a file, directory, link, anything named dir
+# /dir/ will match only a directory named dir
+# /dir/* will match all files, directories and anything else inside a
+#        directory named dir (but not the dir directory itself).
+
+
+
