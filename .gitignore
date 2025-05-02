@@ -72,3 +72,8 @@ zz-*
 
 
 
+
+# allow unrelated histories
+# ref: https://stackoverflow.com/a/45272685
+# 
+# $ git merge YYMMDD-safe main --allow-unrelated-histories
